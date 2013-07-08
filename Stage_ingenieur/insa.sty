@@ -1,0 +1,65 @@
+%Mise en page de Martin Rosalie, Département GM
+
+\usepackage[left=2cm, right=2cm, top=3cm, bottom=2cm]{geometry}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{ifthen}
+\usepackage{titlesec}
+\renewcommand{\familydefault}{ppl}
+
+\definecolor{GRIS}{cmyk}{0.7,0.6,0.5,0.3}
+\definecolor{BLEU}{cmyk}{1,0.9,0.1,0}
+\definecolor{GM-ASI}{cmyk}{0.6,0,0,0}
+\definecolor{EP-MEKA}{cmyk}{0.3,1,0,0}
+\definecolor{CP-MRIE}{cmyk}{0.3,0,1,0}
+\definecolor{GCCD}{cmyk}{0,0.5,1,0}
+
+\newcommand{\pageDeGarde}[6][carte.jpg]{
+\thispagestyle{empty}
+\begin{picture}(0,0)
+	%\put(-75,-300){\includegraphics[scale=0.7]{images/{#1}}} 
+        %\put(-75,-500){\includegraphics[scale=8.6]{images/{#1}}} 
+        \put(-75,-500){\includegraphics[scale=1.9]{images/{#1}}} 
+	\put(-75,-755){\includegraphics[width=212mm]{images/couverture.png}}
+	\put(200,-520){\includegraphics[scale=1]{images/UINTWhiteBackGround}}
+        \put(-15,-560){\includegraphics[scale=1.7]{images/logoasi.png}}
+	\put(140,-630){\color{BLEU}{\begin{minipage}{13cm}\Huge \huge \textbf{#2} \vspace{0.3cm}\\  \LARGE{#3} \end{minipage}}}
+	\put(-65,-630){\color{GRIS}\begin{minipage}{6.3cm} \Large \raggedleft Département \\ #4 \end{minipage}}
+	\put(-72,-720){\color{GRIS}{\begin{minipage}{20.5cm} \raggedleft \Large #5\end{minipage}}}
+	\put(-60,-720){\color{GRIS}{\begin{minipage}{20.5cm} \raggedright \Large #6\end{minipage}}}
+\end{picture}
+
+\newpage
+\thispagestyle{empty}
+\null
+\newpage
+}
+
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+\fancypagestyle{insa}{
+\fancyhead[LO,LE,CO,CE,RO,RE]{}
+\fancyfoot[LE,LO,RE,RO]{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[CO,CE]{\begin{picture}(0,0)\put(125,5){\color{GRIS}{\thepage}}\put(-330,-50){\includegraphics[width=300mm,height=24mm]{images/volutebas.png}} \end{picture}}%
+}
+
+\newcommand{\pageINSA}[1][]{
+\fancyhead[LO,LE]{\begin{picture}(0,0)
+\put(-57,-25){\includegraphics[width=210mm]{images/header.png}}
+\put(0,-10){\begin{minipage}{\textwidth} \raggedleft \scshape\leftmark \end{minipage}}
+\end{picture}}
+\fancyhead[CO,CE,RO,RE]{}
+\fancyfoot[LE,LO,RE,RO]{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\ifthenelse{\equal{#1}{}}{%
+\fancyfoot[CO,CE]{\begin{picture}(0,0)\put(125,5){\color{GRIS}{\thepage}}\put(-330,-50){\includegraphics[width=300mm,height=24mm]{images/volutebas.png}} \end{picture}}%
+}{%
+\fancyfoot[CO]{\begin{picture}(0,0)\put(125,5){\color{GRIS}{\thepage}}\put(-330,-50){\includegraphics[width=300mm,height=24mm]{images/volutebas.png}} \end{picture}}%
+\fancyfoot[CE]{\begin{picture}(0,0)\put(-117,5){\color{GRIS}{\thepage}}\put(-524,-50){\includegraphics[width=300mm,height=24mm]{images/volutebasVerso.png}} \end{picture}}%
+}
+}

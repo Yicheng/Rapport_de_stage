@@ -1,0 +1,30 @@
+%% Conclusion [1-3 pages]
+%% Le sujet a-t-il été entièrement traité ? Que reste-t-il à faire ? Quelles sont les évolutions possibles ?, ...
+
+La conclusion sera scindée en deux parties. Dans un premier temps, je présenterai ce qui a été réalisé vis à vis du cahier des charges. Dans un second temps, je tirerai un bilan personnel vis à vis de ce stage.
+
+\section{Les réalisations}
+
+Nous avions un cahier des charges détaillé des fonctionnalités à implanter (cf \ref{CDC}). 
+Le cahier des charges était divisé en deux parties et ce stage nous a permis de réaliser entièrement les deux, qui concernait la plate-forme de tests, et l'application de démonstration.\\
+
+En ce moment, l'application web est entièrement fonctionnelle et est maintenant en test pour être mise en ligne. Les performances sont beaucoup plus puissantes par rapport aux précedents.\\
+
+Par ailleurs, nous avons maintenu la documentation et l'avons adaptée aux changements que nous avons apportés. Cependant, nous avons manqué de temps pour la rendre plus complète.\\
+
+
+%\section{Les améliorations à effectuer}
+%La plupart des améliorations à effectuer sont situées dans la deuxième partie du Cahier de charge. Nous n'avons ainsi pas eu le temps de générer le menu de l'application via la base de données ou encore migrer les fonctionnalités suiffantes. Certains affichages de l'interface restent également à améliorer.
+
+
+\section{Bilan personnel}
+
+Ce stage a eu pour moi une signification particulière en comparaison avec les précédents stages que j'ai pu effectués.\\
+
+A l'issue de ces 5 mois de stage je peux dire que cette expérience a été très bénéfique pour moi. Tout d'abord, sa durée de 22 semaines, deux fois plus longue que mes précédents stages, m'a permis une véritable intégration au sein d'une équipe. Pendant le stage, J'ai pu mettre en oeuvre mes compétences acquises lors de ma formation dans le département ASI autour des trois filières (Acquisition de l'information, Traitement de l'information, et Informatique) et en acquérir de nouvelles.\\
+
+Ensuite, le fait que ce stage se soit déroulé dans une société du secteur privé, m'a fait me rendre compte concrètement des différences qui existent entre le secteur privé et le secteur public. De plus, le fonctionnement d'UINT en start-up m'a permis de jouer des rôles multiples en dehors du projet de stage, avec plus ou moins de responsabilité, et d'utiliser ainsi bon nombre des connaissances que j'ai pu acquérir au cours de mes études. Le fait d'avoir intégré une équipe de travail, d'avoir participé à des reunions d'avancement ou de réflexions mais aussi d'avoir d\^u respecter des contraintes temporelles pour certaines livraisons ont été à mes yeux très enrichissant pour mon expérience professionnelle.\\
+
+Sur le plan technique, ce stage m'a permis de me rendre compte de la difficulté de reprise d'une application web lorsque peu de documentation est disponible. Construire un site web commercial s'avère être néanmoins une très bonne expérience pour comprendre les mécanismes d'une application malgré son coût énorme en temps. Je me suis également rendu compte que les technologies Web sont certes intéressantes mais assez répétitives. \\
+
+Sur le plan personnel, bien que je travaille depuis quelques années assez fréquemment avec PHP, ce stage m'a permis encore une fois d'expérimenter la dynamique et le travail en équipe. Ceci est un réel plus et je ne pense pas que ce stage aurait été aussi bien réussi sans cela. 

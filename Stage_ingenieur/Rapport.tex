@@ -1,0 +1,333 @@
+\documentclass[a4paper,french,12pt]{report}
+\usepackage{times}
+\usepackage{mathptmx}
+\usepackage[pdftex]{graphicx,color}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage[table]{xcolor}
+\usepackage{tabularx}
+\usepackage{alltt}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{times}
+\usepackage{array}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+% Toute la mise en page selon la charte graphique
+\usepackage{insa}
+% Pour les légendes des images et tableaux
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{eurosym}
+\usepackage{wrapfig}
+
+%\usepackage[svgnames]{xcolor}
+
+% configuration de listings
+% definition de couleurs 
+\definecolor{colKeys}{rgb}{0.16,0.5,0.16}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{0,0,1}
+\definecolor{colString}{rgb}{0.8,0.3,0.3}
+\definecolor{gris}{RGB}{100,100,100}
+\lstset{%configuration de listings
+  float=hbp,%
+  basicstyle=\ttfamily\footnotesize, %
+  identifierstyle=\color{colIdentifier}, %
+  keywordstyle=\color{colKeys} \bf, %
+  stringstyle=\color{colString}, %
+  commentstyle=\color{colComments}, %
+  backgroundcolor=\color{white},
+  % columns=flexible, %
+  tabsize=4, %
+  frame=lrTB, % cadre
+  frameround=tttt, % bord du cadre arondis
+  extendedchars=true, %
+  showspaces=false, %
+  showstringspaces=false, %
+  numbers=left, %
+  numberstyle=\tiny, %
+  stepnumber=1, %
+  breaklines=true, % pour que les lignes trop longues dans les programmes ne debordent pas
+  breakautoindent=true, %
+  captionpos=b,%
+}
+
+%% Le 4ème de couverture (page au dos du rapport) comporte deux résumés (français et anglais) d'une demi-page chacun.
+\newcommand{\pageQuatriemeCouverture}[0]{
+  \newpage
+  \thispagestyle{empty}
+  \begin{picture}(0,0)
+    \put(-120,-750){\includegraphics[scale=1]{images/bis1}}
+    \put(-120,-50){\includegraphics[scale=1]{images/bis2}}
+    \put(0, -230){
+      \begin{normalsize}
+\begin{minipage}{15cm}
+\textbf{Résumé :}\\
+Le stage présenté dans ce rapport a été réalisé par Yicheng GAO dans la société UINT situé à SAINT AUBIN (91) entre le 25 mars et le 31 Août 2013. La société UINT développe et commercialise des circuits électroniques fins, souples et autonomes embarqués dans les cartes à puces, dans les domaines de la recherche et le développement de l’électronique, de la sécurité des transactions et de la fabrication des cartes, en maîtrisant tous les processus et cycles de vie des produits allant de la conception à la fabrication.	\\
+
+Au cours de mon stage, je suis principalement intervenu sur la ma\^itrise d'ouvrage d'un projet carte acoustique. En temps que ma\^itrise d'ouvrage, j'ai du spécifier les besoins des clients internes, établir la recette du application développée, et la conception d'une plate-forme de tests permettant d'évaluer la performance du produit. A l'issue de ces 22 semaines de stage je peux dire que cette expérience a été très bénéfique pour moi. J'ai pu mettre en oeuvre mes compétences acquises lors de ma formation dans le département ASI et en acquérir de nouvelles.\\
+
+\textbf{Abstract :}\\
+The internship described in this report was conducted by Yicheng GAO in the society UINT located in SAINT AUBIN (91) between March 25th and August 31st, 2013. The society UINT develops and markets electronic equipments, flexible electronic board solutions that fit in a credit card format card and are autonomous, in the areas of research and development of
+electronics, security transactions and manufacturing of smart cards, mastering all the processes
+and life cycles of products from conception to manufacturing.\\
+
+During my internship, I'm mainly occurred on the developpement of acoustic card project. During the developpement of this project, I have specified the needs of internal customers, established the recipe of developed application, and designed a test platform for evaluating the performance of the product. At the end of the 22-week course I can say that this experience has been very beneficial for me. I could implement my skills acquired during my training in the ASI department and acquire new ones.
+
+
+     \end{minipage}
+      \end{normalsize}}
+    \put(75, -550){
+      \begin{normalsize}
+        \begin{minipage}{10cm}
+          \begin{tabular}{r}
+            INSA de Rouen\\
+            Avenue de l'Université - BP 08\\
+            76801 Saint-Etienne-du-Rouvray Cedex\\
+            Tél : 02 32 95 97 79\\
+            Fax : 02 32 95 97 08\\
+            https://asi.insa-rouen.fr\\
+          \end{tabular}
+        \end{minipage}
+      \end{normalsize}}
+    \put(320, -590){\includegraphics[scale=1.4]{images/logoasi.png}}
+    \put(170, -670){\includegraphics[scale=0.5]{images/logoINSAdeRouenSlogan}}
+  \end{picture}
+}
+
+
+
+\begin{document}
+
+\pageINSA[twoside]
+
+\pageDeGarde{Rapport de stage ingénieur}{Carte Acoustique}
+{ASI}{{GAO Yicheng}}{{ASI 5  \  2012 - 2013}}
+
+% \clearpage
+\setcounter{tocdepth}{1}
+
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}	% permet de l'avoir dans le sommaire
+\input{chapitres/Remerciements}
+
+%\newpage
+%\thispagestyle{empty}
+%\null
+%\newpage
+
+\tableofcontents
+
+
+\chapter*{Glossaire}		
+\addcontentsline{toc}{chapter}{Glossaire}	% permet de l'avoir dans le sommaire
+\begin{description}
+        %\item[AJAX] \textsl{Asynchronous Javascript and XML}, est une manière de construire des applications Web et des sites web dynamiques basés sur diverses technologies Web ajoutées aux navigateurs dès 1995
+        %\item[API] \textsl{Application Program Interface}. Ensemble de conventions définissant de quelle manière un service peut-\^etre joint et utilisé par un logiciel
+	\item[ASI] \textsl{Architecture des Systèmes d’Information}
+        %\item[CSV] \textsl{Comma-separated values}, est un format informatique ouvert représentant des données tabulaires sous forme de valeurs séparées par des virgules
+	%\item[EP] \textsl{Énergétique et Propulsion}
+	%\item[FTP] \textsl{File Transfer Protocol}, est un protocole de communication dédié à l’échange de fichiers sur un réseau
+        %\item[HTML] \textsl{HyperText Markup Language}. Langage permettant de construire des documents visualisables à l'aide de navigateur Web
+        \item[HTTP] \textsl{HyperText Transfert Protocol}. Protocole de transfert de fichiers HTML à travers un réseau TCP/IP
+        \item[INSA] \textsl{Institut National des Sciences Appliquées}
+	\item[ISP] \textsl{Internet Service Provider}. Fournisseur d'accès à internet (FAI), est un organisme (généralement une entreprise mais parfois aussi une association) offrant une connexion à Internet, un réseau informatique mondial.
+	\item[IVR] \textsl{Interactive Voice Response}. Un serveur vocal interactif est un système informatique permettant aux utilisateurs d'accéder à la base de données d'une société et d'émettre diverses demandes de service, au moyen d'un téléphone fixe, mobile ou logiciel. Les serveurs vocaux interactifs entrent plus généralement dans la catégorie des systèmes de dialogue.
+        %\item[Javascript] Langage intialement proposé par Netscape qui permet d'inclure des fonctions au sein de pages HTML qui sont interprétées par le Navigateur
+	\item[OTP] \textsl{One-time password}. Un Mot de passe unique ou OTP est un mot de passe qui n'est valable que pour une session ou une transaction. Les OTP permettent de combler certaines lacunes associées aux traditionnels mots de passe statiques, comme la vulnérabilité aux attaque par rejeu(replay attack).
+	\item[PCI/DSS]  \textsl{Payment Card Industry Data Security Standard}. Standard de sécurité des données pour l’industrie des cartes de paiement.
+        \item[PHP]  \textsl{Hypertext Preprocessor}, est un langage de scripts libre principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP
+        %\item[PIC] \textsl{Projet INSA Certifié}, projet industriel à mi-temps effectué par une équipe de 4-9 élèves-ingénieurs
+        %\item[SQL] \textsl{Structured Query Language}, est un langage informatique normalisé servant à effectuer des opérations sur des bases de données
+        \item[SAS] \textsl{Strong Authentication Server}
+        \item[XML] \textsl{eXtend Markup Language}. Langage extensible de balisage de documents, élaboré par le groupe de travail ERB (Editorial Review Board) du W3C (World Wide Web Consortium)
+
+
+
+
+
+
+
+\end{description}
+
+
+\chapter{Introduction}
+\input{chapitres/Introduction}
+
+\chapter{Présentation de l'entreprise}
+\input{chapitres/PresentationEntre}
+
+\chapter{Présentation du sujet du stage}
+\input{chapitres/PresentationStage}
+
+\chapter{Le travail effectué}
+\input{chapitres/Travail}
+
+\chapter{Conclusion}
+\input{chapitres/Conclusion}
+
+
+%%     Bibliographie [1-2 pages]
+\begin{thebibliography}{9}	
+
+
+	\bibitem{Lien Internet 01}
+                La société UINT:\\
+		\url{http://www.uint.fr}
+
+	\bibitem{Lien Internet 01}
+                HOTP: An HMAC-Based One-Time Password Algorithm:\\
+		\url{http://www.ietf.org/rfc/rfc4226.txt}
+
+	\bibitem{Lien Internet 01}
+                HMAC: Keyed-Hashing for Message Authentication:\\
+		\url{http://www.ietf.org/rfc/rfc2104.txt}
+
+	\bibitem{Lien Internet 01}
+                Secure Hash Algorithm:\\
+		\url{http://csrc.nist.gov/fips/fip180-1.txt}
+
+	\bibitem{Lien Internet 01}
+                Attacks on SHA1:\\
+		\url{http://www.openauthentication.org/pdfs/Attacks\%20on\%20SHA-1.pdf}
+
+	\bibitem{Lien Internet 01}
+                SVI:\\
+		\url{http://fr.wikipedia.org/wiki/Serveur_vocal_interactif}
+
+	\bibitem{Lien Internet 01}
+                Sips Serveur Vocal:\\
+		\url{http://www.sips-atos.com/fr/63/L-offre-en-detail/Multicanal/Serveur-vocal-interactif.html}
+
+
+\end{thebibliography}
+
+\appendix
+
+\chapter{Procédure SVI dans l'application Web}
+\label{svi}
+\begin{center}
+\includepdf[pages=1-2,landscape=true,frame=true,delta=0 0]{images/2010IVRUINTDetails}        
+\end{center}
+
+
+
+	%\chapter{Les programmes réalisés}
+        %     \section{login.php}
+        %          \lstinputlisting[language=HTML]{images/login.php}
+        %     \section{header.php}
+        %          \lstinputlisting[language=HTML]{images/header.php}
+
+
+\chapter{Documentation d'une signature acoustique}
+\label{sign}
+\noindent \textbf{Title:} Acoustic\_Card - Mode 16ms\\
+\textbf{Creator:} Yicheng GAO\\
+\textbf{Date:} 21/05/2013\\
+
+\noindent \textbf{Development Tools:}
+\begin{itemize}
+\item IDE: MPLAB V.8.88
+\item Compiler: XC8 V.1.12
+\item OS: Windows 7 version 6.1 running on amd64
+\item uC: PIC16F648A\\
+\end{itemize}
+
+\noindent \textbf{Signature details:}
+\begin{itemize}
+\item "bip" at 6.6 KHz for 50 ms, silence for 50 ms, "bip" at 3.3 KHz for 50 ms, silence for 200 ms
+\item 44 symbols (176 bits) : (31 bits of OPT + 33 bits of ID + 16 bits of CRC + 8 bits Convolution Constraint) * (1 / Convolution Yield)
+\item Convolution Yield : 1/2
+\item Duration of symbols about 16 ms
+\item Silence for 200 ms, "bip" at 3.3 KHz for 50 ms, silence for 50 ms, "bip" at 6.6 KHz for 50 ms
+\item ID = 0000000001h
+\item Initial Counter = 0123456789ABCDEFh
+\item Key HOTP = 3132333435363738393031323334353637383930h\\
+\end{itemize}
+
+\noindent \textbf{Behaviour:}
+\begin{itemize}
+\item Initialize the device and the parameters 
+\item Infinite Loop :
+	\begin{itemize}
+	\item If no Signature has been calculated yet, do a calculation
+	\item Else, wait for button pushed, play signature, calculate new frame\\
+	\end{itemize}
+\end{itemize}
+
+\newpage
+\noindent \textbf{Table of Symbols:}
+\begin{center}
+\begin{tabular}{c c c c}
+%\hline
+Symbols (hexa)	&	Frequency (Hz)	&	Nb\_period (hexa, dec)	&	Duration (ms) \\ \hline
+	0x00		&		1602,56		&		0x1A, 26			&	16,224	\\	
+	0x01		&		1706,49		&		0x1B, 27			&	15,822	\\		
+	0x02		&		1908,40		&		0x1F, 31			&	16,244	\\		
+	0x03		&		1805,05		&		0x1D, 29			&	16,066	\\		
+	0x04		&		2304,15		&		0x25, 37			&	16,058	\\		
+	0x05		&		2202,64		&		0x23, 35			&	15,890	\\		
+	0x06		&		2000,00		&		0x20, 32			&	16,000	\\		
+	0x07		&		2100,84		&		0x22, 34			&	16,184	\\		
+	0x08		&		3105,59		&		0x32, 50			&	16,100	\\		
+	0x09		&		2994,01		&		0x30, 48			&	16,032	\\		
+	0x0A		&		2793,30		&		0x2D, 45			&	16,110	\\		
+	0x0B		&		2906,98		&		0x2F, 47			&	16,168	\\		
+	0x0C		&		2403,85		&		0x26, 38			&	15,808	\\
+	0x0D		&		2500,00		&		0x28, 40			&	16,000	\\		
+	0x0E		&		2702,70		&		0x2B, 43			&	15,910  \\
+	0x0F		&		2604,17		&		0x2A, 42			&       16,128  \\ 		
+\end{tabular}
+\end{center}		
+	
+\noindent \textbf{Functions implemented:}
+\begin{itemize}
+\item SHA1 functions in Assembly
+\item HOTP functions in Assembly / void HOTP(void) can be called in C
+\item Decimal Truncation function in Assembly / void DecimalTrunc(void) can be called in C
+	\begin{itemize}
+	\item DecimalTrunc has been modified to follow the requierements of the new signature, namely the HOTP result is before the ID in the frame to be sent
+	\end{itemize}
+\item Generate Acoustic Frame in C, composed of :
+	\begin{itemize}
+	\item Decimal Truncation 
+	\item Mixing Frame
+	\item CRC16 Calculation
+	\item Convolution
+	\end{itemize}
+\item Play Acoustic Frame in C, composed of :
+	\begin{itemize}
+	\item PIC16F648A\_RingTone
+	\item PIC16F648A\_RingSilence
+	\item SetupFreq
+	\item PIC16F648A\_Isr\_Hnd (Interrupt)
+	\end{itemize}
+\item Driver for EEPROM in C : 
+	\begin{itemize}
+	\item Init\_EEPROM\_Variables
+	\item Read Counter (only the writing of Counter from Flash into RAM is in Assembly - void CopyFlashCounter(void) can be called in C)
+	\item Increment Counter
+	\end{itemize}
+\item Driver for PIC16F648A in C :
+	\begin{itemize}
+	\item PIC16F648A\_Init
+	\end{itemize}
+\end{itemize}
+
+
+
+
+
+
+
+\pageQuatriemeCouverture
+
+\end {document}
