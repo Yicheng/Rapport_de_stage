@@ -1,0 +1,18 @@
+% ? mins environs
+
+% ------------------------- %
+
+\begin{frame}
+\frametitle{Contexte de travail}
+\frametitle{Caractéristiques générales de la carte acoustique}
+	\begin{figure}
+	\includegraphics[scale = 0.25]{images/carteinside}	
+	\caption{Schéma d'une carte acoustique}
+	\end{figure}
+
+	\begin{block}{L'électronique embarquée est composée des éléments}
+	\begin{itemize}
+	\item Intégrés sur un circuit imprimé flexible, ou « flex »
+	\item Soudés au « flex » par un processus de capillarité
+	\item Flex composants est appelé Inlay
+	\item Intégré à l

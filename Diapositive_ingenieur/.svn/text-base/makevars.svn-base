@@ -1,0 +1,11 @@
+# ajoutez les cibles ici 
+TARGET=beamer.pdf
+
+# Indiquez les sous répertoires.
+#SUBDIRS=image
+
+POSTMAKE=make clean
+
+# Indiquez où est le répertoire /ressources/document/cls par rapport au répertoire actuel.
+# CLSPATH=../../../../../ressources/document/cls/
+

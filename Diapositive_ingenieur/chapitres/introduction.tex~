@@ -1,0 +1,16 @@
+\begin{frame}
+\frametitle{Introduction}
+	\begin{block}{Stage ingénieur}
+		\begin{itemize}
+		\item Stage ingénieur de 25/03/2013 à 31/08/2013 
+		\item Stage en commun avec Master 2 SSI d'université de Rouen
+		\item Chez société UINT situé à SAINT AUBIN (91)
+		\item Tuteur INSA: Abdelaziz Bensrhair
+		\item Tuteur entreprise: Jean-Philippe AUTHIER (Directeur logiciel R\&D)
+		\end{itemize}
+	\end{block}
+
+	\begin{block}{Sujet du stage}
+	L'optimisation d'un système d'authentification forte dont le mot de passe dynamique est généré en acoustique \hfill (\textbf{Carte acoustique})
+	\end{block}
+\end{frame}

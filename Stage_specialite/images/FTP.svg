@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="27cm" height="18cm" viewBox="34 44 535 358" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="121" y="46" width="104" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="121" y="46" width="104" height="44"/>
+    <text font-size="16.9331" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="173" y="73.1667">
+      <tspan x="173" y="73.1667">Admin</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="253.1" y="47.2" width="104" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="253.1" y="47.2" width="104" height="44"/>
+    <text font-size="16.9331" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="305.1" y="74.3667">
+      <tspan x="305.1" y="74.3667">Admin</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="380.1" y="46.2" width="104" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="380.1" y="46.2" width="104" height="44"/>
+    <text font-size="16.9331" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="432.1" y="73.3667">
+      <tspan x="432.1" y="73.3667">Admin</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="215" y="149" width="164" height="58"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="215" y="149" width="164" height="58"/>
+    <text font-size="16.9331" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="297" y="183.167">
+      <tspan x="297" y="183.167">Serveur Local</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="215" y="245" width="164" height="58"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="215" y="245" width="164" height="58"/>
+    <text font-size="16.9331" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="297" y="279.167">
+      <tspan x="297" y="279.167">Serveur FTP</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="120.1" y="357.2" width="104" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="120.1" y="357.2" width="104" height="44"/>
+    <text font-size="16.9331" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="172.1" y="384.367">
+      <tspan x="172.1" y="384.367">Client</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="252.1" y="356.2" width="104" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="252.1" y="356.2" width="104" height="44"/>
+    <text font-size="16.9331" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="304.1" y="383.367">
+      <tspan x="304.1" y="383.367">Client</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="394.1" y="356.2" width="104" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="394.1" y="356.2" width="104" height="44"/>
+    <text font-size="16.9331" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="446.1" y="383.367">
+      <tspan x="446.1" y="383.367">Client</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="198.929" y1="91.0017" x2="259.832" y2="145.028"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="250.705,143.616 261.504,146.512 257.342,136.135 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="303.389" y1="92.1766" x2="299.565" y2="143.551"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="295.155,135.437 299.399,145.781 305.127,136.18 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="403.833" y1="91.1733" x2="337.387" y2="145.176"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="340.259,136.399 335.652,146.586 346.566,144.16 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="297" y1="208.006" x2="297" y2="239.522"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="292,231.758 297,241.758 302,231.758 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="297" y1="243.994" x2="297" y2="212.478"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="302,220.242 297,210.242 292,220.242 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="197.47" y1="357.831" x2="257.956" y2="306.886"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="255.239,315.712 259.666,305.445 248.797,308.063 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="304.1" y1="356.2" x2="302.616" y2="307.438"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="307.85,315.046 302.548,305.203 297.854,315.35 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="413.184" y1="355.196" x2="343.546" y2="306.529"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="352.775,306.879 341.714,305.249 347.046,315.075 "/>
+  </g>
+  <text font-size="16.9331" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="242" y="120">
+    <tspan x="242" y="120">R &amp; W</tspan>
+  </text>
+  <text font-size="15.8042" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="312" y="230">
+    <tspan x="312" y="230">Synchronisation Totale</tspan>
+  </text>
+  <text font-size="15.8042" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="372.1" y="129.9">
+    <tspan x="372.1" y="129.9">Synchronisation partielle</tspan>
+  </text>
+  <text font-size="16.9331" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="313" y="335">
+    <tspan x="313" y="335">R</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="172.166" y1="356.208" x2="172.921" y2="95.4645"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="177.898,103.243 172.927,93.2285 167.898,103.214 "/>
+  </g>
+  <text font-size="16.9331" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="34" y="225">
+    <tspan x="34" y="225">Mail notification</tspan>
+  </text>
+</svg>

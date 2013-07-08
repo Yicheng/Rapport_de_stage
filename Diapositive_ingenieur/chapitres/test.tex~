@@ -1,0 +1,110 @@
+\begin{frame}
+\frametitle{Le travail effectué}
+\framesubtitle{Plate-forme de tests}
+	\begin{block}{Objectif}
+        Évaluer la performance de carte acoustique Version 4G
+	\end{block}
+
+	\begin{exampleblock}{Procédure}
+	\textbf{Phase 1:} Plan du test\\
+	\textbf{Phase 2:} Démarrage du test\\
+	\textbf{Phase 3:} Analyse des résultats
+	\end{exampleblock}
+
+\end{frame}
+
+% ------------------------- %
+\begin{frame}
+\frametitle{Le travail effectué}
+\framesubtitle{Plate-forme de tests}
+
+\begin{columns}
+\begin{column}[l]{0.6\textwidth}
+	\begin{exampleblock}{Plan du test}
+\textbf{TEST 1:} Fiabilité de l'encryptage\\
+\textbf{TEST 2:} Fiabilité émission sonore\\
+\textbf{TEST 3:} Consommation\\
+\textbf{TEST 4:} Durée de vie\\
+\textbf{TEST 5:} Récupération via IPad\\
+\textbf{TEST 6:} Récupération via IPhone\\
+\textbf{TEST 7:} Récupération via Windows
+	\end{exampleblock}
+\end{column}
+\begin{column}[r]{0.4\textwidth}
+	\begin{exampleblock}{Facteurs}
+\begin{itemize}
+\item Distances
+\item Importance
+\item Périphériques
+\item Environnements
+\item Versions
+\item Phases
+\item Nombre de tests
+\item Logiciel utilisé
+\end{itemize}
+	\end{exampleblock}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ------------------------- %
+\begin{frame}
+\frametitle{Le travail effectué}
+\framesubtitle{Plate-forme de tests}
+	\begin{figure}
+	\includegraphics[width=0.5\textwidth]{images/p1}	
+	%\caption{Prototype utilisé}
+	\end{figure}
+\begin{exampleblock}{Stratégie}
+\textbf{Le prototype:} génère une séquence de 100 messages acoustiques
+\end{exampleblock}
+\end{frame}
+
+% ------------------------- %
+\begin{frame}
+\frametitle{Le travail effectué}
+\framesubtitle{Plate-forme de tests}
+
+\begin{exampleblock}{Stratégie}
+\textbf{Le prototype:} génère une séquence de 100 messages acoustiques
+\end{exampleblock}
+
+\begin{block}{Environnement du code source}
+\begin{itemize}
+\item IDE: MPLAB V.8
+\item Language: Assembleur
+\item Compilateur: MPASM
+\item Microcontrôleur: PIC16F648A (Microchip)
+\begin{itemize}
+\item 256 octets RAM
+\item 4096 mots flash
+\item communication usart uniquement
+\item 1 vecteur interruption
+\end{itemize}
+\end{itemize}
+\end{block}
+\end{frame}
+
+% ------------------------- %
+\begin{frame}
+\frametitle{Le travail effectué}
+\framesubtitle{Plate-forme de tests}
+
+\begin{block}{Analyse des résultats}
+\begin{itemize}
+\item Traitement statistique des résultats
+\item Analyse de léeffet filtrage sous PC
+\item Analyse de volume de son par sonomètre
+\item Différences entre les prototypes et les cartes
+\item Analyse de léeffet environnement
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+
+
+
+
+
+

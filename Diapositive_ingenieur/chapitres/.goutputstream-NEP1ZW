@@ -1,0 +1,51 @@
+% ? mins environs
+
+% ------------------------- %
+
+\begin{frame}
+\frametitle{Contexte de travail}
+\framesubtitle{Caractéristiques générales de la carte acoustique}
+	\begin{figure}
+	\includegraphics[scale = 0.3]{images/carteinside}	
+	%\caption{Schéma d'une carte acoustique}
+	\end{figure}
+
+	\begin{block}{L'électronique embarquée est composée des éléments}
+	\begin{itemize}
+	\item Intégrés sur un circuit imprimé flexible, ou « flex »
+	\item Soudés au « flex » par un processus de capillarité
+	\item Flex composants est appelé Inlay
+	\item Intégré à l'intérieur de la carte PVC
+	\end{itemize}
+	\end{block}
+\end{frame}
+
+% ------------------------- %
+\begin{frame}
+\frametitle{Contexte de travail}
+\framesubtitle{Caractéristiques générales de la carte acoustique}
+\centering
+Organigramme de fonctionnement de la carte acoustique
+	\begin{figure}
+	\includegraphics[scale = 0.3]{images/organigramme2}	
+	\caption{Fonctionnement de la carte acoustique}
+	\end{figure}
+\end{frame}
+
+% ------------------------- %
+\begin{frame}
+\frametitle{Contexte de travail}
+\framesubtitle{Caractéristiques générales de la carte acoustique}
+	\begin{block}{Les constantes et variables essentielles}
+	\begin{itemize}
+	\item Les clés cryptographiques (HOTP KeyA \& HOTP KeyB) 
+	\item Le compteur d'évènements (Event Counter) 
+	\item Le numéro de série (Id)
+	\end{itemize}
+	\end{block}
+
+	\begin{exampletlock}{Génération du cryptogramme acoustique}
+	\begin{itemize}
+	\item La génération d'un HOTP
+	\item La génération du cryptogramme 
+	\item L

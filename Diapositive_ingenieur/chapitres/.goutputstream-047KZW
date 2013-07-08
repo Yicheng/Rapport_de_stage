@@ -1,0 +1,21 @@
+\begin{frame}
+\frametitle{Le travail effectué}
+\framesubtitle{Plate-forme de tests}
+	\begin{block}{Objectif}
+        Évaluer la performance de carte acoustique Version 4G
+	\end{block}
+
+	\begin{exampleblock}{Procédure}
+	\textbf{Phase 1:} Plan du test\\
+	\textbf{Phase 2:} Démarrage du test\\
+	\textbf{Phase 3:} Analyse des résultats
+	\end{exampleblock}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Le travail effectué}
+\framesubtitle{Plate-forme de tests}
+	\begin{exampleblock}{Phase 1: Plan du test}
+\textbf{TEST 1:} Fiabilité de l

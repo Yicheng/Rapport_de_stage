@@ -1,0 +1,16 @@
+% ? mins environs
+
+% ------------------------- %
+
+\begin{frame}
+\frametitle{Contexte de travail}
+\frametitle{Caractéristiques générales de la carte acoustique}
+	\begin{figure}
+	\includegraphics[scale = 0.2]{images/carteinside}	
+	\caption{Schéma d'une carte acoustique}
+	\end{figure}
+
+	\begin{block}{L'électronique embarquée est composée des éléments}
+	\begin{itemize}
+	\item Un microcontrôleur
+	\item Une pile flexible de 3V

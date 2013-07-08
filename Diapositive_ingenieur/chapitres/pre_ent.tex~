@@ -1,0 +1,59 @@
+% ? mins environs
+
+% ------------------------- %
+\begin{frame}
+\frametitle{Présentation de l'entreprise}
+	\begin{block}{UINT}
+	\begin{itemize}
+	\item Fondée en Avril 2008. UINT veut être reconnue comme une société très innovante, pionnière et leader dans le domaine des cartes à énergie embarquée.
+	\item Récompensée «Jeune Entreprise Innovante»
+	\item Prix de la «Start-UP de l'année 2010» décerné par ElectroniqueS
+	\item Prix de «l'innovation internationale 2010» décerné par la CCIE et la CGPME 91
+	\item Equipe composée de 8 ingénieurs/docteurs reconnus pour leur expertise dans le domaine des cartes électroniques («Oscard de la meilleure technologie dans une carte bancaire») et («Finaliste 2009 des SESAMES AWARDS Cartes 2009»).
+	\end{itemize}	
+	\end{block}
+	\end{frame}
+
+
+% ------------------------- %
+\begin{frame}
+\frametitle{Présentation de l'entreprise}
+
+	\begin{block}{Power Inlay Technologies}
+	\begin{itemize}
+	\item UINT Card Platform
+		\begin{itemize}
+		\item ISO 7810
+		\item Process de lamination à froid, tiède ou chaud
+		\end{itemize}
+	\item Développement de firmware
+	\end{itemize}
+	\end{block}
+	\begin{figure}
+	\includegraphics[width=\textwidth]{images/flx}	
+	\end{figure}
+\end{frame}
+
+% ------------------------- %
+\begin{frame}
+\frametitle{Présentation de l'entreprise}
+	\centering
+	Domaines: Sécurité, santé, jeu, marketing
+	\begin{figure}
+	\includegraphics[scale = 0.6]{images/carte.jpg}	
+	\end{figure}
+\end{frame}
+
+% ------------------------- %
+\begin{frame}
+\frametitle{Présentation de l'entreprise}
+\framesubtitle{Projet Carte acoustique}
+	\begin{figure}
+	\includegraphics[scale = 0.225]{images/carteavant}	
+	\caption{Face avant d'une carte acoustique}
+	\end{figure}
+	\begin{block}{Fonctionnalités générales}
+La carte acoustique émet une séquence acoustique unique à chaque pression du bouton. La carte utilise un microprocesseur pour calculer les deux OTP (One Time Password). L'énergie utilisée provient d'une batterie fine et flexible.
+	\end{block}
+\end{frame}
+

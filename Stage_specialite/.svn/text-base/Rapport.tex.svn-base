@@ -1,0 +1,233 @@
+\documentclass[a4paper,french,12pt]{report}
+\usepackage{times}
+\usepackage{mathptmx}
+\usepackage[pdftex]{graphicx,color}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{alltt}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{times}
+\usepackage{array}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+% Toute la mise en page selon la charte graphique
+\usepackage{insa}
+% Pour les légendes des images et tableaux
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{eurosym}
+\usepackage{wrapfig}
+%\usepackage[svgnames]{xcolor}
+
+% configuration de listings
+% definition de couleurs 
+\definecolor{colKeys}{rgb}{0.16,0.5,0.16}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{0,0,1}
+\definecolor{colString}{rgb}{0.8,0.3,0.3}
+\definecolor{gris}{RGB}{100,100,100}
+\lstset{%configuration de listings
+  float=hbp,%
+  basicstyle=\ttfamily\footnotesize, %
+  identifierstyle=\color{colIdentifier}, %
+  keywordstyle=\color{colKeys} \bf, %
+  stringstyle=\color{colString}, %
+  commentstyle=\color{colComments}, %
+  backgroundcolor=\color{white},
+  % columns=flexible, %
+  tabsize=4, %
+  frame=lrTB, % cadre
+  frameround=tttt, % bord du cadre arondis
+  extendedchars=true, %
+  showspaces=false, %
+  showstringspaces=false, %
+  numbers=left, %
+  numberstyle=\tiny, %
+  stepnumber=1, %
+  breaklines=true, % pour que les lignes trop longues dans les programmes ne debordent pas
+  breakautoindent=true, %
+  captionpos=b,%
+}
+
+%% Le 4ème de couverture (page au dos du rapport) comporte deux résumés (français et anglais) d'une demi-page chacun.
+%TODO%
+\newcommand{\pageQuatriemeCouverture}[0]{
+  \newpage
+  % \FPupn\result{1 2 +}
+  % \FPupn\result{\thepage 2 div 2 * \thepage -}
+  % \ifthen{\equal{\result}{3}}{\newpage}
+  \thispagestyle{empty}
+  \begin{picture}(0,0)
+    \put(-120,-750){\includegraphics[scale=1]{images/bis1}}
+    \put(-120,-50){\includegraphics[scale=1]{images/bis2}}
+    \put(0, -230){
+      \begin{normalsize}
+\begin{minipage}{15cm}
+\textbf{Résumé :}\\
+Le stage présenté dans ce rapport a été réalisé par Yicheng GAO dans la société Windeo Green Futur situé à Bruxelles de Belegique entre le 25 juin et le 31 Août 2012. Windeo Green futur est le leader européen en énergie renouvelable et maitrise de l'énergie, qui agit pour le développement des énergies renouvelables et apporte des solutions accessibles aux particuliers, entreprises et collectivités locales. Le stagiaire, en spécialité d'informatique, travaille au sein du département d'ingénierie, avec pour mission d’organiser et d’optimiser les opérations d’échange d’informations entre tout les acteurs éoliens de Windeo Green Futur.
+
+Au cours de mon stage, je suis principalement intervenu sur la ma\^itrise d'ouvrage d'un projet d'application web. En temps que ma\^itrise d'ouvrage, j'ai du spécifier les besoins des clients internes, et établir la recette du application développée. A l'issue de ces 10 semaines de stage je peux dire que cette expérience a été très bénéfique pour moi. J'ai pu mettre en oeuvre mes compétences acquises lors de ma formation dans le département ASI et en acquérir de nouvelles.\\
+
+
+\textbf{Abstract :}\\
+The internship described in this report was conducted by Yicheng GAO in the society Windeo Green Future located in Brussels of Belegique between June 25 and August 31, 2012. Windeo Green future is the European leader in renewable energy and energy conservation, which devotes itself to the development of renewable energy and provides affordable solutions to individuals, companies and local authorities. The trainee, with a specialty of computer sciences, works in the engineering department, with the mission to organize and optimize operations between all actors of Windeo Green Future.
+
+During my internship, I'm mainly occurred on the developpement of a web application project. During the developpement of this project, I have specified the needs of internal customers and established the recipe of developed application. At the end of the 10-week course I can say that this experience has been very beneficial for me. I could implement my skills acquired during my training in the ASI department and acquire new ones.
+
+
+     \end{minipage}
+      \end{normalsize}}
+    \put(75, -550){
+      \begin{normalsize}
+        \begin{minipage}{10cm}
+          \begin{tabular}{r}
+            INSA de Rouen\\
+            Avenue de l'Université - BP 08\\
+            76801 Saint-Etienne-du-Rouvray Cedex\\
+            Tél : 02 32 95 97 79\\
+            Fax : 02 32 95 97 08\\
+            https://asi.insa-rouen.fr\\
+          \end{tabular}
+        \end{minipage}
+      \end{normalsize}}
+    \put(320, -590){\includegraphics[scale=1.4]{images/logoasi.png}}
+    \put(170, -670){\includegraphics[scale=0.5]{images/logoINSAdeRouenSlogan}}
+  \end{picture}
+}
+
+
+
+\begin{document}
+
+\pageINSA[twoside]
+
+\pageDeGarde{Rapport de stage spécialité}{Mise en place d'une base \\de données réseau}
+{ASI}{{GAO Yicheng}}{{ASI 4 -- 2011 - 2012}}
+
+% \clearpage
+\setcounter{tocdepth}{1}
+
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}	% permet de l'avoir dans le sommaire
+\input{chapitres/Remerciements}
+
+\tableofcontents
+
+
+\chapter*{Glossaire}		
+\addcontentsline{toc}{chapter}{Glossaire}	% permet de l'avoir dans le sommaire
+\begin{description}
+        \item[AJAX] \textsl{Asynchronous Javascript and XML}, est une manière de construire des applications Web et des sites web dynamiques basés sur diverses technologies Web ajoutées aux navigateurs dès 1995
+        \item[API] \textsl{Application Program Interface}. Ensemble de conventions définissant de quelle manière un service peut-\^etre joint et utilisé par un logiciel
+	\item[ASI] \textsl{Architecture des Systèmes d’Information}
+        \item[CSV] \textsl{Comma-separated values}, est un format informatique ouvert représentant des données tabulaires sous forme de valeurs séparées par des virgules
+	\item[EP] \textsl{Énergétique et Propulsion}
+	\item[FTP] \textsl{File Transfer Protocol}, est un protocole de communication dédié à l’échange de fichiers sur un réseau
+        \item[HTML] \textsl{HyperText Markup Language}. Langage permettant de construire des documents visualisables à l'aide de navigateur Web
+        \item[HTTP] \textsl{HyperText Transfert Protocol}. Protocole de transfert de fichiers HTML à travers un réseau TCP/IP
+        \item[INSA] \textsl{Institut National des Sciences Appliquées}
+        \item[Javascript] Langage intialement proposé par Netscape qui permet d'inclure des fonctions au sein de pages HTML qui sont interprétées par le Navigateur
+        \item[PHP]  \textsl{Hypertext Preprocessor}, est un langage de scripts libre principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP
+        \item[PIC] \textsl{Projet INSA Certifié}, projet industriel à mi-temps effectué par une équipe de 4-9 élèves-ingénieurs
+        \item[SQL] \textsl{Structured Query Language}, est un langage informatique normalisé servant à effectuer des opérations sur des bases de données
+        \item[XML] \textsl{eXtend Markup Language}. Langage extensible de balisage de documents, élaboré par le groupe de travail ERB (Editorial Review Board) du W3C (World Wide Web Consortium)
+
+\end{description}
+
+\chapter{Introduction}
+\input{chapitres/Introduction}
+
+\chapter{Présentation de l'entreprise}
+\input{chapitres/PresentationEntre}
+
+\chapter{Présentation du sujet du stage}
+\input{chapitres/PresentationStage}
+
+\chapter{Le travail effectué}
+\input{chapitres/Travail}
+
+\chapter{Conclusion}
+\input{chapitres/Conclusion}
+
+
+%%     Bibliographie [1-2 pages]
+\begin{thebibliography}{9}
+	\bibitem{Lien Internet 01}
+                Site Internet du Windeo green-futur:\\
+		\url{http://www.greenfutur.com/}
+
+	\bibitem{Lien Internet 01}
+                Site Internet du groupe Windeo planet:\\
+		\url{http://www.windeo-planet.com/}
+
+	\bibitem{Lien Internet 01}
+                Site Internet du Windeo-planet wordpress:\\
+		\url{http://www.windeo-planet.com/wordpress/}
+
+	\bibitem{Lien Internet 01}
+                Site officiel du logiciel \texttt{phpMyAdmin}:\\
+		\url{http://www.phpmyadmin.net/home\_page/index.php}
+
+	\bibitem{Lien Internet 01}
+                Site officiel du \texttt{PHP}:\\
+		\url{http://www.php.net/}
+
+	\bibitem{Lien Internet 01}
+                Site officiel du \texttt{Mysql}:\\
+		\url{http://www.mysql.fr/}
+
+	\bibitem{Lien Internet 01}
+                Cours Technologie Web par M.Alexandre Pauchet:\\
+		\url{https://moodle.insa-rouen.fr/course/view.php?id=153}
+
+	\bibitem{Lien Internet 01}
+                Forum du wordpress:\\
+		\url{http://wordpress.org/support/forum/themes-and-templates}
+
+	\bibitem{Lien Internet 01}
+                Site officiel du logiciel \texttt{goodsync}:\\
+		\url{http://www.goodsync.com/fr/index.html}
+
+	\bibitem{Lien Internet 01}
+                Site officiel du logiciel \texttt{filezilla}:\\
+		\url{http://filezilla.fr/}
+
+	\bibitem{Lien Internet 01}
+                Site officiel du OS \texttt{Ubuntu}:\\
+		\url{http://ubuntu-fr.org/}
+
+	\bibitem{Lien Internet 01}
+                Tutoriel du \texttt{HTML}:\\
+		\url{http://www.w3schools.com/html/default.asp}
+
+	\bibitem{Lien Internet 01}
+                Tutoriel du \texttt{AJAX}:\\
+		\url{http://www.w3schools.com/ajax/default.asp}
+
+	\bibitem{Lien Internet 01}
+                Tutoriel du \texttt{Javascript}:\\
+		\url{http://www.w3schools.com/js/default.asp}
+
+
+\end{thebibliography}
+
+\appendix
+
+	\chapter{Les programmes réalisés}
+             \section{login.php}
+                  \lstinputlisting[language=HTML]{images/login.php}
+             \section{header.php}
+                  \lstinputlisting[language=HTML]{images/header.php}
+
+
+\pageQuatriemeCouverture
+
+\end {document}

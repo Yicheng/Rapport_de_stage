@@ -1,0 +1,35 @@
+\relax 
+\catcode`:\active
+\catcode`;\active
+\catcode`!\active
+\catcode`?\active
+\ifx\hyper@anchor\@undefined
+\global \let \oldcontentsline\contentsline
+\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global \let \oldnewlabel\newlabel
+\gdef \newlabel#1#2{\newlabelxx{#1}#2}
+\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\let \contentsline\oldcontentsline
+\let \newlabel\oldnewlabel}
+\else
+\global \let \hyper@last\relax 
+\fi
+
+\select@language{french}
+\@writefile{toc}{\select@language{french}}
+\@writefile{lof}{\select@language{french}}
+\@writefile{lot}{\select@language{french}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Le site de management du wordpress}{1}{section.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}L'onglet \texttt  {Pages}}{1}{subsection.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}L'onglet \texttt  {Formulaire}}{1}{subsection.1.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Modifier du formulaire}{2}{section.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Base de donn\IeC {\'e}e}{3}{section.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}L'outil \texttt  {Formulaire} du wordpress}{3}{subsection.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}L'extension \texttt  {Database Browser}}{3}{subsection.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Logiciel \texttt  {phpMyAdmin}}{4}{subsection.3.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Autres fonctionnalit\IeC {\'e}s du wordpress}{6}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Changement du mot de passe du \IeC {\guillemotleft }news FTP\IeC {\guillemotright }}{6}{subsection.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}La notification par mail}{6}{subsection.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Changement du mot de passe d'acc\IeC {\`e}s du wordpress}{7}{subsection.4.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}l'outil pour l'\IeC {\'e}change des fichiers FTP}{8}{section.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}L'outil pour faire la synchronisation des fichier FTP}{9}{section.6}}

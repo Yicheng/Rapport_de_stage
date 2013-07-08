@@ -1,0 +1,93 @@
+\documentclass{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{tabularx}
+\usepackage{tikz}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\usetheme{Warsaw}
+\usecolortheme{orchid}
+\title[Soutenance stage ingénieur \hfill 29/08/2013]{Soutenance stage ingénieur}
+\author{Yicheng GAO}
+\date{29 août 2013}
+\institute{INSA de Rouen}
+\addtobeamertemplate{footline}{\hfill\insertframenumber/\inserttotalframenumber\hspace{2em}\null}
+% 30 mins de présentation
+
+% --------------------- --------------------- --------------------- --------------------- --------------------- %
+
+\AtBeginSection[]{
+  \begin{frame}{Sommaire}
+  \small \tableofcontents[currentsection, hideothersubsections]
+  \end{frame} 
+}
+
+\begin{document}
+
+\definecolor{bleu}{rgb}{0.20,0.20,0.82}
+\definecolor{vert}{rgb}{0.16,0.85,0.20}
+
+% ------------ PAGE DE GARDE-------------- %
+
+\begin{frame} 
+  	\titlepage
+	\begin{center}
+	Tuteur INSA: Abdelaziz Bensrhair\\
+	Tuteur entreprise: Jean-Philippe AUTHIER
+	\end{center}
+
+	\begin{center}
+		\begin{minipage}[c]{10cm}
+			\begin{center}
+				\includegraphics[width=3cm]{images/logoasi}
+				\includegraphics[width=3cm]{images/UINTWhiteBackGround}
+			\end{center}
+		\end{minipage}
+	\end{center}
+\end{frame}
+
+% --------------- PLAN ----------------- %
+
+\begin{frame} 
+	\frametitle{Le Plan}
+	\tableofcontents[hidesubsections]{}
+\end{frame}
+
+% ----------- INTRODUCTION -------------- %
+\section{Introduction}
+\input{chapitres/introduction.tex}
+
+\section{Présentation de l'entreprise}
+\input{chapitres/pre_ent.tex}
+
+% ---------- CORPS DU PROJET ------------ %
+\section{Contexte de travail}
+\input{chapitres/context.tex}
+
+\section{Le travail effectué}
+\input{chapitres/travail.tex}
+\subsection{Plate-forme de tests}
+\input{chapitres/test.tex}
+\subsection{Plate-forme de démonstration}
+\input{chapitres/web.tex}
+
+% ------------- CONCLUSION -------------- %
+
+\section{Conclusion}
+\input{chapitres/conclusion.tex}
+
+% ---------------------------------------- %
+\begin{frame}
+	\frametitle{Fin de la présentation}
+	\begin{figure}
+	\includegraphics[scale = 0.45]{images/question.jpg}	
+	\end{figure}
+	
+	\begin{center}
+	\textbf{Merci de votre attention}
+	\end{center}
+
+\end{frame}
+\end{document}

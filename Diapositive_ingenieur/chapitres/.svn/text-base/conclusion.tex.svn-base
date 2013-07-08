@@ -1,0 +1,23 @@
+\begin{frame}
+\frametitle{Conclusion}
+	\begin{block}{Les réalisations}
+		\begin{itemize}
+		\item Plate-forme de tests: Les résultats sont bien pris en compte
+		\item Plate-forme de démonstration: L'application web est entièrement fonctionnelle
+		\end{itemize}
+	\end{block}
+
+	\begin{exampleblock}{Bilan personnel}
+		\begin{itemize}
+		\item Durée
+		\item Mettre en oeuvre autour des trois filières ASI
+		\begin{itemize}
+			\item Acquisition de l'information
+			\item Traitement de l'information
+			\item Informatique
+		\end{itemize}
+		\item Jouer des rôles multiples 
+		\end{itemize}
+	\end{exampleblock}
+
+\end{frame}
